@@ -18,14 +18,33 @@
         flex-direction: column;
       }
 
-      a {
+      .top-bar {
+        width: 100%;
+        background-color: #333; /* Dark background */
+        color: #ffffff; /* White text */
+        padding: 10px;
+        text-align: center;
         position: fixed;
-        color: #dee7dd;
-        bottom: 10px;
-        left: 10px;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .top-bar a {
+        color: #ffffff;
         text-decoration: none;
-        font-size: 14px;
         font-weight: bold;
+        padding: 5px 10px;
+      }
+
+      .top-bar a:hover {
+        text-decoration: underline;
+      }
+
+      .main-content {
+        margin-top: 60px; /* Create space for the top bar */
       }
 
       .container {
@@ -54,10 +73,18 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <h1>Welcome to the SurvAI-Day Survey</h1>
-      <p>Powered by the University of Maryland</p>
-      <img src="https://umd-brand.transforms.svdcdn.com/production/uploads/images/informal-seal.png?w=512&h=512&auto=compress%2Cformat&fit=crop&dm=1656362660&s=f147c43be06ac2a530c41260819e63a1" alt="University of Maryland Logo" />
+    <div class="top-bar">
+      <a href="session-plan.html">Breakout Session Plan</a>
+      <a href="index.html">Voice Based Agent</a>
+      <a href="https://interviewgpt.fly.dev/" target="_blank">Text Based Agent</a>
+    </div>
+
+    <div class="main-content">
+      <div class="container">
+        <h1>Welcome to the SurvAI-Day Survey</h1>
+        <p>Powered by the University of Maryland</p>
+        <img src="https://umd-brand.transforms.svdcdn.com/production/uploads/images/informal-seal.png?w=512&h=512&auto=compress%2Cformat&fit=crop&dm=1656362660&s=f147c43be06ac2a530c41260819e63a1" alt="University of Maryland Logo" />
+      </div>
     </div>
 
     <!-- Link to external JavaScript file -->
