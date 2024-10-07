@@ -5,8 +5,8 @@ const apiKey = "218f9c11-17c4-4539-86d8-faccb717194e"; // Substitute with your P
 const buttonConfig = {
   position: "bottom", // "bottom" | "top" | "left" | "right" | "top-right" | "top-left" | "bottom-left" | "bottom-right"
   offset: "40px", // decide how far the button should be from the edge
-  width: "120px", // min-width of the button
-  height: "120px", // height of the button
+  width: "80", // min-width of the button
+  height: "80", // height of the button
   idle: { // button state when the call is not active.
     color: `rgb(160,186,158)`,
     type: "round",
