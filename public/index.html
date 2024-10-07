@@ -13,9 +13,9 @@
         padding: 0;
         min-height: 100vh;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
       }
 
       .top-bar {
@@ -70,6 +70,36 @@
         width: 80px; /* Adjust as needed */
         height: auto;
       }
+
+      .footer {
+        padding: 5px;
+        text-align: left;
+        background-color: #f7f8f4; /* Match page background */
+        color: #333; /* Dark text */
+        width: 100%;
+        font-size: 0.9em;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+      }
+
+      .footer a {
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      .footer a:hover {
+        text-decoration: underline;
+      }
+
+      .footer img {
+        width: 28px; /* Icon size */
+        height: 28px;
+        margin-right: 5px; /* Space between icon and text */
+      }
     </style>
   </head>
   <body>
@@ -85,6 +115,16 @@
         <p>Powered by the University of Maryland</p>
         <img src="https://umd-brand.transforms.svdcdn.com/production/uploads/images/informal-seal.png?w=512&h=512&auto=compress%2Cformat&fit=crop&dm=1656362660&s=f147c43be06ac2a530c41260819e63a1" alt="University of Maryland Logo" />
       </div>
+    </div>
+
+    <!-- Footer with GitHub link -->
+    <div class="footer">
+      <p>
+        <a href="https://github.com/MaxMLang/umd-call-demo" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="GitHub Icon">
+          Github Repo
+        </a>
+      </p>
     </div>
 
     <!-- Link to external JavaScript file -->
