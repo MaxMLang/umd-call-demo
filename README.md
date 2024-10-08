@@ -55,8 +55,6 @@ This demo is designed for easy setup and demonstration purposes, with minimal co
 - **Express**: A minimal framework for backend routing and middleware.
 - **HTML/CSS**: For the frontend structure and styling.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 
 Thank you for exploring the Voice-Based Agent Demo App! We hope you find it insightful for understanding the potential of AI-driven voice interaction in research.
