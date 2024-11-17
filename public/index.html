@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Survey | University of Maryland</title>
+    <title>AI Interviewer Demo | World Bank</title>
     <style>
       body {
         font-family: Arial, sans-serif;
-        background-color: #f7f8f4;
+        background-color: #eaeaea;
         color: #333;
         margin: 0;
         padding: 0;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
       }
 
@@ -22,7 +22,7 @@
         width: 100%;
         background-color: #333;
         color: #ffffff;
-        padding: 5px;
+        padding: 10px;
         text-align: center;
         position: fixed;
         top: 0;
@@ -30,102 +30,106 @@
         display: flex;
         justify-content: center;
         gap: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
       }
 
       .top-bar a {
         color: #ffffff;
         text-decoration: none;
         font-weight: bold;
-        padding: 5px 10px;
+        padding: 8px 12px;
+        transition: background-color 0.3s ease;
+        border-radius: 4px;
       }
 
       .top-bar a:hover {
-        text-decoration: underline;
+        background-color: #555;
       }
 
       .main-content {
-        margin-top: 60px;
+        margin-top: 80px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
       }
 
-      .container {
-        text-align: center;
-        padding: 10px 15px; /* Reduced vertical padding */
-        background-color: #d50032;
+      .container-white {
+        background-color: #ffffff;
+        color: #333;
         border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        width: 80%;
-        max-width: 400px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        padding: 30px 20px;
+        margin-bottom: 20px;
+        width: 100%;
+      }
+
+      .container-blue {
+        background-color: #00437d;
+        color: #ffffff;
+        border-radius: 8px;
+        text-align: left;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        padding: 30px 20px;
+        margin-bottom: 40px;
+        width: 100%;
       }
 
       h1 {
-        font-size: 2em;
+        font-size: 2.4em;
+        margin-bottom: 10px;
+      }
+
+      .container-white h1, .container-white p {
+        color: #333;
+        text-align: center;
+      }
+
+      .container-blue h2 {
+        margin-top: 0;
+        font-size: 1.8em;
+        text-align: center;
         color: #ffffff;
       }
 
-      p {
-        font-size: 1em;
-        color: #ffffff;
+      p, li {
+        font-size: 1.1em;
+        line-height: 1.6;
       }
 
-      img {
-        margin-top: 10px; /* Reduced margin to lower height */
-        width: 60px;
+      .container-white img {
+        margin-top: 15px;
+        width: 250px; /* Smaller logo size */
         height: auto;
-      }
-
-      .footer {
-        padding: 5px;
-        text-align: left;
-        background-color: #f7f8f4;
-        color: #333;
-        width: 100%;
-        font-size: 0.9em;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-      }
-
-      .footer a {
-        color: #333;
-        text-decoration: none;
-        font-weight: bold;
-        display: inline-flex;
-        align-items: center;
-      }
-
-      .footer a:hover {
-        text-decoration: underline;
-      }
-
-      .footer img {
-        width: 28px;
-        height: 28px;
-        margin-right: 5px;
       }
     </style>
   </head>
   <body>
     <div class="top-bar">
-      <a href="session-plan.html">Breakout Session Plan</a>
-      <a href="index.html">Voice Based Agent</a>
-      <a href="https://interviewgpt.fly.dev/" target="_blank">Text Based Agent</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
     </div>
 
     <div class="main-content">
-      <div class="container">
-        <h1>Welcome to the SurvAI-Day Survey</h1>
-        <p>Powered by the University of Maryland</p>
-        <img src="https://umd-brand.transforms.svdcdn.com/production/uploads/images/informal-seal.png?w=512&h=512&auto=compress%2Cformat&fit=crop&dm=1656362660&s=f147c43be06ac2a530c41260819e63a1" alt="University of Maryland Logo" />
+      <div class="container-white">
+        <h1>AI Interviewer Demo</h1>
+        <p>Presented to</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/The_World_Bank_logo.svg/1024px-The_World_Bank_logo.svg.png" alt="World Bank Logo" />
       </div>
-    </div>
 
-    <div class="footer">
-      <p>
-        <a href="https://github.com/MaxMLang/umd-call-demo" target="_blank">
-          <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="GitHub Icon">
-          Github Repo
-        </a>
-      </p>
+      <div class="container-blue">
+        <h2>How to Use the AI Interviewer Demo</h2>
+        <p>This demo showcases the capabilities of our AI interviewer. To start:</p>
+        <ul>
+          <li>Navigate to the Home page to begin the interview process.</li>
+          <li>Follow the on-screen prompts and respond as instructed.</li>
+          <li>Access the About section for more details on the AI system and its use cases.</li>
+        </ul>
+        <p>For any assistance or further inquiries, please contact our support team.</p>
+      </div>
     </div>
 
     <script src="script.js"></script>
