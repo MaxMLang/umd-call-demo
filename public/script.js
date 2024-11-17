@@ -1,6 +1,6 @@
 var vapiInstance = null;
-const assistant = "6386ae61-7903-44f6-941a-c27c564c6ccc"; // Substitute with your assistant ID
-const apiKey = "218f9c11-17c4-4539-86d8-faccb717194e"; // Substitute with your Public key from Vapi Dashboard.
+const assistant = "ASSISTANT ID"; // Substitute with your assistant ID
+const apiKey = "APIKEY"; // Substitute with your Public key from Vapi Dashboard.
 
 const buttonConfig = {
   position: "bottom", // "bottom" | "top" | "left" | "right" | "top-right" | "top-left" | "bottom-left" | "bottom-right"
